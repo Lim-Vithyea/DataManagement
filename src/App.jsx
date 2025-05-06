@@ -24,11 +24,6 @@ function App() {
             <Route path="/user/*" element={<Userlanding />} />
             </>
           )}
-          {/* {isAuthenticated && 
-          <>
-          
-          </>
-          } */}
         </Routes>
       </div>
     </BrowserRouter>

@@ -8,7 +8,7 @@ const DeleteAlert = () => {
   }, []);
   return (
     <div>
-      <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 transition-opacity duration-300">
+      <div className="fixed inset-0 flex items-center justify-center transition-opacity duration-300">
       <div
         className={`bg-white p-6 rounded-lg shadow-lg transform transition-all duration-500 w-[400px] ${
           show ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-90 translate-y-10"

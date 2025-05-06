@@ -5,6 +5,8 @@ import LoginAlert from "../../components/LoginAlert";
 import "../../index.css"
 import LoginErrorAlert from "../../components/LoginErrorAlert";
 import LoginIcon from "../../asset/login_icon.svg"
+import ParticlesComponent from "../../components/Particle";
+
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState("");
@@ -66,7 +68,8 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
-      <div className="hidden md:flex flex-col items-center justify-center w-1/2 bg-blue-900 text-white p-6 md:p-12">
+      <ParticlesComponent id="particles"/>
+      <div className="hidden md:flex flex-col items-center justify-center w-1/2 bg-transparent text-white p-6 md:p-12 z-10">
         <img src="/P10.ico" alt="Emblem"
           className="w-40 h-40 md:w-52 md:h-52"/>
         <p className="text-lg md:text-2xl font-bold text-center   khmer-text">
@@ -83,7 +86,7 @@ const Login = ({ onLogin }) => {
         </p>
       </div>
       {/* Right Side */}
-      <div className="flex items-center justify-center w-full md:w-1/2 p-6 ">
+      <div className="flex items-center justify-center w-full md:w-1/2 p-6 z-10 bg-white">
         <div className="p-6 md:p-8 bg-white rounded-lg w-full max-w-md">
           <h1 className="text-xl md:text-2xl font-bold text-center khmer-text">សូមស្វាគមន៏</h1>
           <p className="text-center font-semibold text-lg md:text-xl mt-3 khmer-text">ចូលប្រព័ន្ធ</p>
